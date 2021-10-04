@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #333;
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#header-img {
+    width: 300px;
+}
+
+.box {
+    padding: 2em;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #fff;
+    opacity: 0.2;
+}
+
+#header:hover {
+    opacity: 1;
+}
+
+#nav-bar > ul {
+    margin-top: 1em;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.emphasis {
+    margin-top: 12em;
+    text-align: center;
+}
+
+#email {
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: honeydew;
+}
+
+#features h2 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+#features p {
+    margin-bottom: 2em;
+}
+
+#features p:last-child {
+    margin-bottom: 0;
+}
+
+#how-it-works {
+    display: none;
+}
+
+#video {
+    display: block;
+    margin: auto;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 1em;
+
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 1em 0;
+}
+
+footer {
+    text-align: right;
+    background-color: #fff;
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 912px) {
+    #header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav-bar ul {
+        margin-top: 0;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .emphasis {
+        margin-top: 6em;
+    }
+
+    #features {
+    width: 900px;
+    margin: 0 auto;
+    }
+
+    #pricing {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2em;
+    }
+
+    #how-it-works {
+        display: initial;
+    }
+}

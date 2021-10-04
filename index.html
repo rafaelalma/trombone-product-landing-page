@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="box">
         <img id="header-img" src="images/product-landing-page-logo.png" alt="Original Trombones logo">
         <nav id="nav-bar">
             <ul>
@@ -20,37 +22,40 @@
         </nav>
     </header>
     <main>
-        <h1>Handcrafted, home-made masterpieces</h1>
-
-        <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
-            <label for="email">
-                <input type="email" name="email" id="email" placeholder="Enter your email address">
-            </label>
-            <br>
-            <input id="submit" type="submit" value="GET STARTED">
-        </form>
-
-        <div id="features">
-            <h2>Premium Materials</h2>
-            <p>
-                Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
-                purchase.
-            </p>
-            <h2>Fast Shipping</h2>
-            <p>
-                We make sure you recieve your trombone as soon as we have finished making it. We also provide free
-                returns
-                if you are not satisfied.
-            </p>
-            <h2>Quality Assurance</h2>
-            <p>
-                For every purchase you make, we will ensure there are no damages or faults and we will check and test
-                the
-                pitch of your instrument.
-            </p>
+        <div class="emphasis box">
+            <h1>Handcrafted, home-made masterpieces</h1>
+            <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+                <label for="email">
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
+                </label>
+                <br>
+                <input id="submit" class="button" type="submit" value="GET STARTED">
+            </form>
         </div>
 
-        <div id="how-it-works">
+        <div class="features-container">
+            <div id="features" class="box">
+                <h2>Premium Materials</h2>
+                <p>
+                    Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
+                    purchase.
+                </p>
+                <h2>Fast Shipping</h2>
+                <p>
+                    We make sure you recieve your trombone as soon as we have finished making it. We also provide free
+                    returns
+                    if you are not satisfied.
+                </p>
+                <h2>Quality Assurance</h2>
+                <p>
+                    For every purchase you make, we will ensure there are no damages or faults and we will check and test
+                    the
+                    pitch of your instrument.
+                </p>
+            </div>
+        </div>
+
+        <div id="how-it-works" class="box">
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -58,8 +63,8 @@
             </iframe>
         </div>
 
-        <div id="pricing">
-            <div class="card">
+        <div id="pricing" class="box">
+            <div class="card box">
                 <h3>TENOR TROMBONE</h3>
                 <ul>
                     <li class="price">$600</li>
@@ -68,9 +73,9 @@
                     <li>Lorem, ipsum dolor.</li>
                     <li>Lorem, ipsum.</li>
                 </ul>
-                <button>SELECT</button>
+                <button class="button">SELECT</button>
             </div>
-            <div class="card">
+            <div class="card box">
                 <h3>BASS TROMBONE</h3>
                 <ul>
                     <li class="price">$900</li>
@@ -79,9 +84,9 @@
                     <li>Lorem, ipsum dolor.</li>
                     <li>Lorem, ipsum.</li>
                 </ul>
-                <button>SELECT</button>
+                <button class="button">SELECT</button>
             </div>
-            <div class="card">
+            <div class="card box">
                 <h3>VALVE TROMBONE</h3>
                 <ul>
                     <li class="price">$1200</li>
@@ -90,12 +95,12 @@
                     <li>Lorem, ipsum dolor.</li>
                     <li>Lorem, ipsum.</li>
                 </ul>
-                <button>SELECT</button>
+                <button class="button">SELECT</button>
             </div>
         </div>
     </main>
-    <footer>
-        <ul>
+    <footer class="box">
+        <ul class="links">
             <li><a href="#">Privacy</a></li>
             <li><a href="#">Terms</a></li>
             <li><a href="#">Contact</a></li>
